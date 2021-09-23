@@ -1,0 +1,16 @@
+%Test file for experiments on images
+%lena512 = imread('lena512.bmp');
+%lena512 = double(lena512);
+%imwrite(uint8(lena512),'lena5122.bmp','bmp');
+%lena512.bmp
+%newlena.bmp
+%suicide.jpg
+switch eord 
+    case 1
+        rubik=Encrypt1(rubik , len_stream);
+        display('Encryption Chosen');
+    case 2
+        rubik=Decrypt1(rubik , len_stream);
+        display('Decryption Chosen');
+
+end

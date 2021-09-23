@@ -1,0 +1,464 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "Decrypt.m",
+			"settings":
+			{
+				"buffer_size": 2196,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "function [rubik] = Encrypt(rubik)\n%   Detailed explanation goes here\nekey= input ('Encryption:   enter 7 digit passkey [x x x x x x x]:  ');\nshfl_seq = ekey(1);\nxturns= ekey(2);\n%xstyle= ekey(3);  %style variables have to do with mat file PatternCommand\nyturns= ekey(4);\n%ystyle= ekey(5);\nzturns= ekey(6);\n%zstyle= ekey(7);\nswitch shfl_seq\n    case 0\n        %style is XYZ\n        rubik = XRot(xturns , rubik);\n        rubik = YRot(yturns , rubik);\n        rubik = ZRot(zturns , rubik);\n        %call xrot for Xturns also parse to it Xtsyle\n        %then do for Y\n        %then do for Z\n    case 1\n        %style is XZY\n        rubik = XRot(xturns , rubik);\n        rubik = ZRot(zturns , rubik);\n        rubik = YRot(yturns , rubik);\n        \n    case 2\n        %style is YXZ\n        rubik = YRot(yturns , rubik);\n        rubik = XRot(xturns , rubik);\n        rubik = ZRot(zturns , rubik);\n        \n       \n    case 3\n        %style is YZX\n        rubik = YRot(yturns , rubik);\n        rubik = ZRot(zturns , rubik);\n        rubik = XRot(xturns , rubik);\n              \n    case 4\n        %style is ZXY\n        rubik = ZRot(zturns , rubik);\n        rubik = XRot(xturns , rubik);\n        rubik = YRot(yturns , rubik);\n    case 5\n        %style is ZYX\n        rubik = ZRot(zturns , rubik);\n        rubik = YRot(yturns , rubik);\n        rubik = XRot(xturns , rubik);\n                \n    case 6\n        %style is -XYZ\n        rubik = XRot(xturns*-1 , rubik);\n        rubik = YRot(yturns , rubik);\n        rubik = ZRot(zturns , rubik);\n    case 7\n        %style is -YXZ\n        rubik = YRot(yturns*-1 , rubik);\n        rubik = XRot(xturns , rubik);\n        rubik = ZRot(zturns , rubik);\n    case 8\n        %style is -ZXY\n        rubik = ZRot(zturns*-1 , rubik);\n        rubik = XRot(xturns , rubik);\n        rubik = YRot(yturns , rubik);\n    case 9\n        %style is -X-Y-Z\n        rubik = XRot(xturns*-1 , rubik);\n        rubik = YRot(yturns*-1 , rubik);\n        rubik = ZRot(zturns*-1 , rubik);\nend\n% For now lets keep the funcionality to only even step unidirectional\n% rotation\n\n% within the cases\n\n\n\n\n\n\n\n\n\n\n\n",
+			"file": "Encrypt.m",
+			"file_size": 2242,
+			"file_write_time": 131345822116457650,
+			"settings":
+			{
+				"buffer_size": 2108,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Rubeka.m",
+			"settings":
+			{
+				"buffer_size": 605,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "XRot.m",
+			"settings":
+			{
+				"buffer_size": 200,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "YRot.m",
+			"settings":
+			{
+				"buffer_size": 125,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "ZRot.m",
+			"settings":
+			{
+				"buffer_size": 126,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				"Syntax Check"
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 174.0,
+		"history":
+		[
+			"exit()",
+			"exit",
+			"ringgenY(3)",
+			"1+4",
+			"run"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/F/Saifuddin/Mech Work/MatLab/Rubeka Crypton"
+	],
+	"file_history":
+	[
+		"/C/Users/Mr.MuufadalS/Downloads/gear.3.rb",
+		"/C/Users/Mr.MuufadalS/Desktop/NMO temp/Final/SMR_MAIN.htm",
+		"/C/Users/Mr.MuufadalS/Downloads/Aal_HypocycloidCam_v1_1_0.rbz",
+		"/F/Saifuddin/Mech Work/MatLab/Rubeka Crypton/Master.m",
+		"/F/Saifuddin/Mech Work/MatLab/Rubeka Crypton/PaternCommand.m",
+		"/C/Program Files/Windows Defender/MsMpEng.exe",
+		"/C/Users/Mr.MuufadalS/Desktop/Coding/robocon2k17.py",
+		"/C/Users/Mr.MuufadalS/AppData/Local/Microsoft/Windows/INetCache/IE/VXYW7SOR/.m[1].m",
+		"/C/Users/Mr.MuufadalS/Desktop/psiphon3(1).exe.orig",
+		"/C/Users/Mr.MuufadalS/Desktop/Coding/RUBIK.py",
+		"/C/Users/Mr.MuufadalS/Desktop/explosive-calisthenics-2015-.pdf"
+	],
+	"find":
+	{
+		"height": 0.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"folders":
+	[
+		{
+			"path": "F:\\Saifuddin\\Mech Work\\MatLab\\Rubeka Crypton"
+		}
+	],
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Decrypt.m",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2196,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								601,
+								601
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Matlab/Matlab.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1046.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Encrypt.m",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2108,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								597,
+								597
+							],
+							[
+								619,
+								619
+							],
+							[
+								657,
+								657
+							],
+							[
+								695,
+								695
+							],
+							[
+								733,
+								733
+							],
+							[
+								742,
+								742
+							],
+							[
+								753,
+								753
+							],
+							[
+								775,
+								775
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Matlab/Matlab.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 259.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Rubeka.m",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 605,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Objective-C/Objective-C.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "XRot.m",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 200,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Objective-C/Objective-C.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "YRot.m",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 125,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Objective-C/Objective-C.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "ZRot.m",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 126,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Objective-C/Objective-C.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/Python/Python.sublime-build",
+	"project": "",
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

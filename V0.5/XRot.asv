@@ -1,0 +1,17 @@
+function [rubik] = XRot( xturns , rubik , len_stream )
+%XRot rotates every odd plane for Xturns
+
+
+tempslice = zeros(len_stream);
+for xa=1:2:(len_stream - 1)
+    for i=1:1:(lenstream - 1)
+        for j=1:1:(lenstream -1)
+            tempslice(i , j) = rubik(xa,:,:);
+        end
+    end
+    tempslice = rot90(tempslice , xturns);
+    rubik(xa,:,:) = tempslice;
+    
+end
+end
+

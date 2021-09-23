@@ -1,0 +1,243 @@
+#include<stdio.h>
+#include<conio.h>
+void xop(char [][][]);
+void yop(char [][][]);
+void zop(char [][][]);
+void input(char []);
+void rubic(int [][][]);
+void decrypt();
+void encrypt();
+void output();
+
+
+//Input output integration, function debugging
+
+void main()
+{
+char rubik[4][4][4];
+char c[64];
+clrscr();
+int a;
+input();
+rubic();
+getch();
+getch();
+}
+
+void input()
+{
+int a;
+for(a=0;a<64;a++)
+{
+	scanf("%s",&c[a]);
+}
+return(c[64]);
+}
+
+void output()
+{
+
+
+}
+
+void rubic(char rubik[4][4][4])
+{
+int i,j,k,a=0,x;
+
+	for(i=0;i<=3;i++)
+	{
+		for(j=0;j<=3;j++)
+		{
+			for(k=0;k<=3;k++)
+			{
+				a=a+1;
+				rubik[i][j][k]=c[a];
+			}
+		}
+	}
+	printf("Enter e for Encryption and d for Decryption\n");
+	scanf("%d",&x);
+	switch(x)
+	{
+	 case e:
+	 {
+		encrypt();
+		break;
+	 }
+	 case d:
+	 {
+		decrypt();
+		break;
+	 }
+	}
+}
+void encrypt()
+{
+	int m,s,v,o,p[3];
+	printf("Enter Passkey\n");
+
+	for(m=0;m<3;m++)
+	{
+	scanf("%d",&p[m])
+	}
+	}
+
+
+
+	for(s=0;s<=p[0];s++)
+	{
+	xop(rubik[4][4][4]);
+	}
+	for(v=0;v<=p[1];v++)
+	{
+	yop(rubik[4][4][4]);
+	}
+	for(o=0;o<=p[2];o++)
+	{
+	zop(rubik[4][4][4]);
+	}
+
+}
+
+void xop(char rubik[4][4][4])
+{
+	int t1,t2,t3,t4,t5,t6,t7,t8,t9,t10,t11,t12,t13,t14,t15,t16;
+	t1=rubik[0][0][1];
+	t2=rubik[0][1][1];
+	t3=rubik[0][2][1];
+	t4=rubik[0][3][1];
+	t5=rubik[1][0][1];
+	t6=rubik[1][1][1];
+	t7=rubik[1][2][1];
+	t8=rubik[1][3][1];
+	t9=rubik[2][0][1];
+	t10=rubik[2][1][1];
+	t11=rubik[2][2][1];
+	t12=rubik[2][3][1];
+	t13=rubik[3][0][1];
+	t14=rubik[3][1][1];
+	t15=rubik[3][2][1];
+	t16=rubik[3][3][1];
+
+
+	rubik[0][3][1]=t1;
+	rubik[1][3][1]=t2;
+	rubik[2][3][1]=t3;
+	rubik[3][3][1]=t4;
+	rubik[0][2][1]=t5;
+	rubik[0][1][1]=t6;
+	rubik[2][2][1]=t7;
+	rubik[3][2][1]=t8;
+	rubik[0][1][1]=t9;
+	rubik[1][1][1]=t10;
+	rubik[2][1][1]=t11;
+	rubik[3][1][1]=t12;
+	rubik[0][0][1]=t13;
+	rubik[1][0][1]=t14;
+	rubik[2][0][1]=t15;
+	rubik[3][0][1]=t16;
+
+
+}
+
+void yop(char rubik[4][4][4])
+{
+	int a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16;
+	a1=rubik[0][1][0];
+	a2=rubik[0][1][1];
+	a3=rubik[0][1][2];
+	a4=rubik[0][1][3];
+	a5=rubik[1][1][0];
+	a6=rubik[1][1][1];
+	a7=rubik[1][1][2];
+	a8=rubik[1][1][3];
+	a9=rubik[2][1][0];
+	a10=rubik[2][1][1];
+	a11=rubik[2][1][2];
+	a12=rubik[2][1][3];
+	a13=rubik[3][1][0];
+	a14=rubik[3][1][1];
+	a15=rubik[3][1][2];
+	a16=rubik[3][1][3];
+
+
+	rubik[0][1][3]=a1;
+	rubik[1][1][3]=a2;
+	rubik[2][1][3]=a3;
+	rubik[3][1][3]=a4;
+	rubik[0][1][2]=a5;
+	rubik[1][1][2]=a6;
+	rubik[2][1][2]=a7;
+	rubik[3][1][2]=a8;
+	rubik[0][1][1]=a9;
+	rubik[1][1][1]=a10;
+	rubik[2][1][1]=a11;
+	rubik[3][1][1]=a12;
+	rubik[0][1][0]=a13;
+	rubik[1][1][0]=a14;
+	rubik[2][1][0]=a15;
+	rubik[3][1][0]=a16;
+}
+
+void zop(char rubik[4][4][4])
+{
+	int b1,b2,b3,b4,b5,b6,b7,b8,b9,b10,b11,b12,b13,b14,b15,b16;
+	b1=rubik[1][0][0];
+	b2=rubik[1][0][1];
+	b3=rubik[1][0][2];
+	b4=rubik[1][0][3];
+	b5=rubik[1][1][0];
+	b6=rubik[1][1][1];
+	b7=rubik[1][1][2];
+	b8=rubik[1][1][3];
+	b9=rubik[1][2][0];
+	b10=rubik[1][2][1];
+	b11=rubik[1][2][2];
+	b12=rubik[1][2][3];
+	b13=rubik[1][3][0];
+	b14=rubik[1][3][1];
+	b15=rubik[1][3][2];
+	b16=rubik[1][3][3];
+
+
+	rubik[1][0][3]=b1;
+	rubik[1][1][3]=b2;
+	rubik[1][2][3]=b3;
+	rubik[1][3][3]=b4;
+	rubik[1][0][2]=b5;
+	rubik[1][1][2]=b6;
+	rubik[1][2][2]=b7;
+	rubik[1][3][2]=b8;
+	rubik[1][0][1]=b9;
+	rubik[1][1][1]=b10;
+	rubik[1][2][1]=b11;
+	rubik[1][3][1]=b12;
+	rubik[1][0][0]=b13;
+	rubik[1][1][0]=b14;
+	rubik[1][2][0]=b15;
+	rubik[1][3][0]=b16;
+}
+
+void decrypt()
+{
+int o1,o2,v1,v2,s1,s2;
+
+o1=4 - p[2]%4;
+v1=4 - p[1]%4;
+s1=4 - p[0]%4;
+
+for(o2=0;o2<o1;o2++)
+{
+	zop();
+}
+
+for(v2=0;v2<v1;v2++)
+{
+	yop();
+}
+
+for(s2=0;s2<s1;s2++)
+{
+	xop();
+}
+}

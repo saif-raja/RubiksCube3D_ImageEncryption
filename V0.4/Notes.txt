@@ -1,0 +1,4 @@
+Use matlab to manipulate the rubiks component arrays ,
+File Handling and text wrapping can be continued to be done in Python
+
+Also try to keep charecters as Charecters, If not possible Convert to ASCII

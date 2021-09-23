@@ -1,0 +1,10 @@
+function [rubik] = YRot( yturns , rubik , len_stream )
+%YRot rotates every odd plane for Y turns
+
+for ya=1:2:(len_stream - 1)
+    tempslice = rubik(ya,:,:);
+    tempslice = rot90(tempslice , yturns);
+    rubik(ya,:,:) = tempslice;
+end
+
+end

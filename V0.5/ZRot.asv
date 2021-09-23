@@ -1,0 +1,7 @@
+function [ output_args ] = Untitled6( input_args )
+
+for za=1:2:len_stream
+    rubik(:,:,za)= rot90(rubik(:,:,za) , zturns);
+end
+end
+
